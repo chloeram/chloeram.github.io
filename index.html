@@ -16,22 +16,23 @@
 <body>
     <!-- Navbar -->
     <div id="navbar"></div>
-    <script>
-        fetch('components/navbar.html')
-            .then(response => {
-                if (!response.ok) throw new Error('Failed to load navbar.');
-                return response.text();
-            })
-            .then(data => {
-                document.getElementById('navbar').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading navbar:', error));
-    </script>
+        <script>
+            fetch('components/navbar.html')
+                .then(response => {
+                    if (!response.ok) throw new Error('Failed to load navbar.');
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById('navbar').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading navbar:', error));
+        </script>
+
     <header>
-        <h1 class="arimo-header">Welcome to My Portfolio</h1>
+        <h1 class="arimo-header">Hi, I'm Chloe</h1>
     </header>
     <main>
-        <p class="arimo-paragraph">Hello! I'm Chloe, a UX designer and software engineer.</p>
+        <p class="arimo-paragraph">hey! I'm Chloe, a UX designer and software engineer.</p>
         <p class="arimo-italic">I love designing elegant, user-friendly interfaces.</p>
         <nav>
             <a href="#about" class="arimo-nav-link">About Me</a>
