@@ -53,3 +53,30 @@ body {
     text-decoration: underline;
     color: #388E3C; /* Darker green on hover */
 }
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    padding: 0.5rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-right: 1rem;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Arimo", sans-serif;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
